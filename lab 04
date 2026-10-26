@@ -1,0 +1,66 @@
+# Lab 04: Loops
+
+# Problem 1: Use a for loop to loop over a sequence
+print("===== Problem 1: For Loop =====")
+
+fruits = ["apple", "banana", "cherry"]
+
+for fruit in fruits:
+    print(fruit)
+
+
+# Problem 2: Countdown from a number to zero using while loop
+print("\n===== Problem 2: Countdown =====")
+
+number = int(input("Enter a non-negative number: "))
+
+if number < 0:
+    print("Please enter a non-negative number.")
+else:
+    while number >= 0:
+        print(number)
+        number -= 1
+
+
+# Problem 3: Find the exponentiation of a number
+print("\n===== Problem 3: Exponentiation =====")
+
+base = float(input("Enter the base number: "))
+exponent = int(input("Enter the exponent: "))
+
+result = base ** exponent
+
+print("Result =", result)
+
+
+# Problem 4: Sum of all prime numbers below 1000
+print("\n===== Problem 4: Sum of Prime Numbers =====")
+
+total = 0
+
+for number in range(2, 1000):
+    is_prime = True
+
+    for divisor in range(2, int(number ** 0.5) + 1):
+        if number % divisor == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        total += number
+
+print("Sum of all prime numbers below 1000 =", total)
+
+
+# Problem 5: Print Fibonacci numbers below N
+print("\n===== Problem 5: Fibonacci Series =====")
+
+N = int(input("Enter N: "))
+
+a, b = 0, 1
+
+while a < N:
+    print(a, end=" ")
+    a, b = b, a + b
+
+print()
