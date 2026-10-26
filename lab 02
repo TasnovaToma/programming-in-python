@@ -1,2 +1,20 @@
-
+# Lab 02 - Task 1
 print("Hello, Python!")
+
+
+
+# Lab 02 - Task 2
+# Introduction to Python coding environments
+
+environments = [
+    "IDLE",
+    "PyCharm",
+    "Spyder",
+    "Jupyter Notebook",
+    "Google Colab"
+]
+
+print("Python Coding Environments:")
+
+for environment in environments:
+    print(environment)
