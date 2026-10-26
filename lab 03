@@ -1,0 +1,75 @@
+# Problem 1: Swap the values of two variables
+print("===== Problem 1: Swap Two Variables =====")
+
+a = input("Enter the first value: ")
+b = input("Enter the second value: ")
+
+print("Before swapping: a =", a, ", b =", b)
+
+a, b = b, a
+
+print("After swapping: a =", a, ", b =", b)
+
+
+# Problem 2: Calculate the distance between two points
+print("\n===== Problem 2: Distance Between Two Points =====")
+
+import math
+
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print("Distance =", distance)
+
+
+# Problem 3: Check whether a number is even or odd
+print("\n===== Problem 3: Even or Odd =====")
+
+number = int(input("Enter an integer: "))
+
+if number % 2 == 0:
+    print(number, "is an even number")
+else:
+    print(number, "is an odd number")
+
+
+# Problem 4: Check whether a character is a vowel
+print("\n===== Problem 4: Vowel or Not =====")
+
+character = input("Enter a character: ").strip().lower()
+
+if len(character) != 1:
+    print("Please enter exactly one character.")
+elif character in "aeiou":
+    print(character, "is a vowel")
+else:
+    print(character, "is not a vowel")
+
+
+# Problem 5: Convert marks into a grade
+print("\n===== Problem 5: Student Grade =====")
+
+marks = float(input("Enter marks (0-100): "))
+
+if marks < 0 or marks > 100:
+    print("Invalid marks")
+elif marks >= 90:
+    print("Grade: A")
+elif marks >= 85:
+    print("Grade: B+")
+elif marks >= 80:
+    print("Grade: B")
+elif marks >= 75:
+    print("Grade: C+")
+elif marks >= 70:
+    print("Grade: C")
+elif marks >= 65:
+    print("Grade: D+")
+elif marks >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
